@@ -1,0 +1,70 @@
+score.o: In function `random_mat_':
+score.c:(.text+0x0): multiple definition of `random_mat_'
+/tmp/cc4JbpZH.o:main.c:(.text+0x0): first defined here
+score.o: In function `random_vec_':
+score.c:(.text+0x8f): multiple definition of `random_vec_'
+/tmp/cc4JbpZH.o:main.c:(.text+0x8f): first defined here
+score.o: In function `fill_mat_':
+score.c:(.text+0x102): multiple definition of `fill_mat_'
+/tmp/cc4JbpZH.o:main.c:(.text+0x102): first defined here
+score.o: In function `fill_vec_':
+score.c:(.text+0x167): multiple definition of `fill_vec_'
+/tmp/cc4JbpZH.o:main.c:(.text+0x167): first defined here
+score.o: In function `make_random_matrix':
+score.c:(.text+0x1b5): multiple definition of `make_random_matrix'
+/tmp/cc4JbpZH.o:main.c:(.text+0x1b5): first defined here
+score.o: In function `make_random_vec':
+score.c:(.text+0x231): multiple definition of `make_random_vec'
+/tmp/cc4JbpZH.o:main.c:(.text+0x231): first defined here
+score.o: In function `make_const_matrix':
+score.c:(.text+0x27f): multiple definition of `make_const_matrix'
+/tmp/cc4JbpZH.o:main.c:(.text+0x27f): first defined here
+score.o: In function `make_const_vec':
+score.c:(.text+0x30d): multiple definition of `make_const_vec'
+/tmp/cc4JbpZH.o:main.c:(.text+0x30d): first defined here
+score.o: In function `print_matrix':
+score.c:(.text+0x36d): multiple definition of `print_matrix'
+/tmp/cc4JbpZH.o:main.c:(.text+0x36d): first defined here
+score.o: In function `matmul_ijk':
+score.c:(.text+0x441): multiple definition of `matmul_ijk'
+/tmp/cc4JbpZH.o:main.c:(.text+0x441): first defined here
+score.o: In function `matmul_ikj':
+score.c:(.text+0x5c3): multiple definition of `matmul_ikj'
+/tmp/cc4JbpZH.o:main.c:(.text+0x5c3): first defined here
+score.o: In function `matmul_jik':
+score.c:(.text+0x745): multiple definition of `matmul_jik'
+/tmp/cc4JbpZH.o:main.c:(.text+0x745): first defined here
+score.o: In function `matmul_jki':
+score.c:(.text+0x8c7): multiple definition of `matmul_jki'
+/tmp/cc4JbpZH.o:main.c:(.text+0x8c7): first defined here
+score.o: In function `matmul_kij':
+score.c:(.text+0xa49): multiple definition of `matmul_kij'
+/tmp/cc4JbpZH.o:main.c:(.text+0xa49): first defined here
+score.o: In function `matmul_kji':
+score.c:(.text+0xbd4): multiple definition of `matmul_kji'
+/tmp/cc4JbpZH.o:main.c:(.text+0xbd4): first defined here
+score.o: In function `matmul':
+score.c:(.text+0xd56): multiple definition of `matmul'
+/tmp/cc4JbpZH.o:main.c:(.text+0xd56): first defined here
+score.o: In function `matvecmul_ij':
+score.c:(.text+0xfbb): multiple definition of `matvecmul_ij'
+/tmp/cc4JbpZH.o:main.c:(.text+0xfbb): first defined here
+score.o: In function `matvecmul_ji':
+score.c:(.text+0x10b5): multiple definition of `matvecmul_ji'
+/tmp/cc4JbpZH.o:main.c:(.text+0x10b5): first defined here
+score.o: In function `matvecmul':
+score.c:(.text+0x11af): multiple definition of `matvecmul'
+/tmp/cc4JbpZH.o:main.c:(.text+0x11af): first defined here
+score.o: In function `score_matmul':
+score.c:(.text+0x124f): multiple definition of `score_matmul'
+/tmp/cc4JbpZH.o:main.c:(.text+0x124f): first defined here
+score.o: In function `score_matvecmul':
+score.c:(.text+0x134f): multiple definition of `score_matvecmul'
+/tmp/cc4JbpZH.o:main.c:(.text+0x134f): first defined here
+score.o: In function `test_mm':
+score.c:(.text+0x1442): multiple definition of `test_mm'
+/tmp/cc4JbpZH.o:main.c:(.text+0x1442): first defined here
+score.o: In function `test_mv':
+score.c:(.text+0x1549): multiple definition of `test_mv'
+/tmp/cc4JbpZH.o:main.c:(.text+0x1549): first defined here
+collect2: error: ld returned 1 exit status
