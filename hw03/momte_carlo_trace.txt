@@ -1,0 +1,18 @@
+sequntial pi estimation:
+	 0) value=3.141201 time=4.300774 sec time_sum=4.300774
+	 1) value=3.141317 time=4.307652 sec time_sum=8.608426
+	 2) value=3.141164 time=4.287697 sec time_sum=12.896123
+	 3) value=3.141572 time=4.290484 sec time_sum=17.186607
+	 4) value=3.141217 time=4.298300 sec time_sum=21.484907
+	 5) value=3.141386 time=4.294093 sec time_sum=25.779000
+	 6) value=3.141480 time=4.283816 sec time_sum=30.062816
+sequential pi estimantion: avg_runtime=4.294688 sec, avg_value=3.141334
+omp pi estimation:
+	 0) value=3.141357 time=1.388713 sec time_sum=1.388713
+	 1) value=3.141357 time=1.389746 sec time_sum=2.778459
+	 2) value=3.141357 time=1.384553 sec time_sum=4.163012
+	 3) value=3.141357 time=1.384640 sec time_sum=5.547652
+	 4) value=3.141357 time=1.404825 sec time_sum=6.952477
+	 5) value=3.141481 time=1.386460 sec time_sum=8.338937
+	 6) value=3.141481 time=1.383661 sec time_sum=9.722598
+sequential pi estimantion: avg_runtime=1.388943 sec, avg_value=3.141393
