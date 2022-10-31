@@ -1,0 +1,49 @@
+# $@ - is a macro that refers to target
+# $< - is a macro that refers to the first dependency
+# $^ - is a macro that refers to all dependecies
+# % - is a macro to make a pattern that we want to 
+#     watch in both the target and the dependency 
+
+
+CC=gcc
+CFLAGS=-c -Wall -fopenmp
+LDFLAGS=
+SOURCES=$(shell find ./ ! -name "main.cpp" -name "*.cpp")
+OBJECTS=$(SOURCES:.cpp=.o)	
+EXECUTABLE=app.exe
+LIB=matrix.o main.o
+
+all: $(EXECUTABLE)
+$(EXECUTABLE): matrix.o main.o
+	$(CC) $(CFLAGS) main.o matrix.o $(LOPT) -o $(EXECUTABLE)
+matrix.o: matrix.cpp
+	$(CC) $(CFLAGS) -c matrix.cpp
+main.o: main.cpp
+	$(CC) $(CFLAGS) -c main.cpp
+$(OBJECTS): $(SOURCES)
+	gcc -c $^
+	clean:
+	rm -f *.o *.a *.exe
+
+
+#CC=gcc
+#CFLAGS=-fopenmp
+#LOPT=-lomp
+#
+#SOURCES = main.c matrix.c
+#OBJECTS = $(SOURCES:.c=.o)
+#EXECUTABLE = main
+#
+#all: main
+#
+#main: main.o matrix.o
+#	$(CC) $(CFLAGS) main.o matrix.o $(LOPT) -o app.exe 
+#
+#main.o: main.c
+#	$(CC) $(CFLAGS) -c main.c
+#
+#matrix.o: matrix.cpp
+#	$(CC) $(CFLAGS) -c matrix.c
+#
+#clean:
+#	rm -rf *.o *.a task1
